@@ -4,9 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+
+const greeting = <h1>Hello world!</h1>
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+   greeting
   </React.StrictMode>,
   document.getElementById('root')
 );
