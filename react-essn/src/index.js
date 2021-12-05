@@ -9,9 +9,10 @@ import reportWebVitals from './reportWebVitals';
 const greeting = <h1>Hello world!</h1>
 
 ReactDOM.render(
-  <React.StrictMode>
-   greeting
-  </React.StrictMode>,
+ // <React.StrictMode>
+  //  <App />
+  //</React.StrictMode>
+  greeting,
   document.getElementById('root')
 );
 
