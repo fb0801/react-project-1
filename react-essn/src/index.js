@@ -6,7 +6,12 @@ import reportWebVitals from './reportWebVitals';
 
 
 
-const greeting = <h1>Hello world!</h1>
+const getCurrentDate = ()=> {
+  const date = new Date();
+  return date.toDateString();
+}
+
+const greeting = <h1>Hello word! current date is :{getCurrentDate()}</h1>
 
 ReactDOM.render(
  // <React.StrictMode>
