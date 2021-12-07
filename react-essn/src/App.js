@@ -16,9 +16,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          
         </a>
       </header>
+      <Intro message="here you can find the series you want"></Intro>
     </div>
   );
 }
