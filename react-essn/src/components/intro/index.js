@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Intro = (props) => {
+const Intro = props => {
     <p>
-         
+         (props.message)
           </p>
   }
 
