@@ -1,11 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-const Intro = (props) => {
-  <p>
-         our first functional component
-        </p>
-}
+
 
 function App() {
   return (
