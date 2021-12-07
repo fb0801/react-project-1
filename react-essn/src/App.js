@@ -19,7 +19,7 @@ function App() {
           
         </a>
       </header>
-      <Intro message="here you can find the series you want"></Intro>
+      <Intro message="here you can find the series you want"/>
     </div>
   );
 }
