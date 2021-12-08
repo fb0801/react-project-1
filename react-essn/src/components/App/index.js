@@ -2,7 +2,7 @@
 import './App.css';
 import Intro from '../intro';
 import { Component } from 'react';
-import { render } from 'react-dom';
+//import { render } from 'react-dom';
 
 
  class App extends Component {
@@ -27,7 +27,8 @@ render() {
         
         
       </header>
-      
+      <Intro message="here you can find the tv shows"/>
+      the length of the series array = {this.state.series.length}
     </div>
   );
 
