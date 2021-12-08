@@ -10,27 +10,28 @@ import { render } from 'react-dom';
      series:[]
    }
  }
+ComponentDidMount(); {
+  const series = ['vikings', 'GOT'];
 
+  setTimeout(() => {
+    this.setTimeout({ series: series })
+  }, 2000);
+}
 
-render() {
+render(); {
   return (
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">REACT prac</h1>
         <img src={logo} className="App-logo" alt="logo" />
         
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-        </a>
+        
       </header>
       
     </div>
   );
-}
+
+  }
 
 export default App;
+  
