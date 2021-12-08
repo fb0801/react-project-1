@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import Intro from '../intro';
 import { Component } from 'react';
@@ -9,8 +9,8 @@ import { render } from 'react-dom';
    state = {
      series:[]
    }
- }
-ComponentDidMount(); {
+ 
+componentDidMount() {
   const series = ['vikings', 'GOT'];
 
   setTimeout(() => {
@@ -18,12 +18,12 @@ ComponentDidMount(); {
   }, 2000);
 }
 
-render(); {
+render() {
   return (
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">REACT prac</h1>
-        <img src={logo} className="App-logo" alt="logo" />
+       
         
         
       </header>
@@ -32,6 +32,6 @@ render(); {
   );
 
   }
-
+ }
 export default App;
   
