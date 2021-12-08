@@ -14,7 +14,7 @@ componentDidMount() {
   const series = ['vikings', 'GOT'];
 
   setTimeout(() => {
-    this.setTimeout({ series: series })
+    this.setState({ series: series })
   }, 2000);
 }
 
