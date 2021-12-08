@@ -1,9 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import Intro from '../intro';
+import { Component } from 'react';
+import { render } from 'react-dom';
 
 
-function App() {
+ class App extends Component {
+   state = {
+     series:[]
+   }
+ }
+
+
+render() {
   return (
     <div className="App">
       <header className="App-header">
@@ -19,7 +28,7 @@ function App() {
           
         </a>
       </header>
-      <Intro message="here you can find the series you want"/>
+      
     </div>
   );
 }
