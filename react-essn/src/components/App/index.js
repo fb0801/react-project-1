@@ -13,7 +13,8 @@ import 'whatwg-fetch';
  
 componentDidMount() {
   fetch('https://www.tvmaze.com/search?q=the+simpsons')
-  .then((Response)=> {console.log(Response)})
+  .then((Response)=> Response.json())
+  .then(json => console.log(json))
 }
 
 render() {
