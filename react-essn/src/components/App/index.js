@@ -12,11 +12,8 @@ import 'whatwg-fetch';
    }
  
 componentDidMount() {
-  const series = ['vikings', 'GOT'];
-
-  setTimeout(() => {
-    this.setState({ series: series });
-  }, 2000);
+  fetch('https://www.tvmaze.com/search?q=the+simpsons')
+  .then((Response)=> {console.log(Response)})
 }
 
 render() {
