@@ -2,6 +2,7 @@
 import './App.css';
 import Intro from '../intro';
 import { Component } from 'react';
+import 'whatwg-fetch';
 //import { render } from 'react-dom';
 
 
@@ -14,7 +15,7 @@ componentDidMount() {
   const series = ['vikings', 'GOT'];
 
   setTimeout(() => {
-    this.setState({ series: series })
+    this.setState({ series: series });
   }, 2000);
 }
 
