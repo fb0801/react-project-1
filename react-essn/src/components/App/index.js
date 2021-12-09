@@ -12,9 +12,9 @@ import 'whatwg-fetch';
    }
  
 componentDidMount() {
-  fetch('https://www.tvmaze.com/search?q=the+simpsons')
+  fetch('https://api.tvmaze.com/search/shows?q=the-simpsons')
   .then((Response)=> Response.json())
-  .then(json => console.log(json))
+  .then(json => this.setState({ series: json }))
 }
 
 render() {
