@@ -8,27 +8,17 @@ import Series   from '../../containers/Series';
 
 
  class App extends Component {
-   state = {
-     series:[]
-   }
- 
-componentDidMount() {
-  fetch('https://api.tvmaze.com/search/shows?q=the-simpsons')
-  .then((Response)=> Response.json())
-  .then(json => this.setState({ series: json }))
-}
+  
 
 render() {
   return (
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">REACT prac</h1>
-       
-        
         
       </header>
       <Intro message="here you can find the tv shows"/>
-      the length of the series array = {this.state.series.length}
+      the length of the series array - {this.state.series.length}
       <series />
     </div>
   );
