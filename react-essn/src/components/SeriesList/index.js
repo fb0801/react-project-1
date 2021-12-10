@@ -1,8 +1,16 @@
 import React from "react";
+import Series from "../../containers/Series";
 
 const SeriesList = (props) =>{
     retrun (
-        <div>Series list Component</div>
+        <div>
+            <ul className="series-list">
+                {props.list.map(series => {
+                    <li>{Series.show.name}</li>
+                })}
+            </ul>
+
+        </div>
     )
 }
 
