@@ -3,6 +3,7 @@ import './App.css';
 import Intro from '../intro';
 import { Component } from 'react';
 import 'whatwg-fetch';
+import Series   from '../../containers/Series';
 //import { render } from 'react-dom';
 
 
@@ -28,6 +29,7 @@ render() {
       </header>
       <Intro message="here you can find the tv shows"/>
       the length of the series array = {this.state.series.length}
+      <series />
     </div>
   );
 
