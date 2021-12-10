@@ -10,10 +10,12 @@ class Series extends Component {
      .then((Response)=> Response.json())
      .then(json => this.setState({ series: json }))
    }
-   
+
     render(){
     return (
-        <div>Series container</div>
+        <div> 
+            the length of the series array - {this.state.series.length}
+</div>
     )
 }
 }

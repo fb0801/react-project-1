@@ -18,7 +18,6 @@ render() {
         
       </header>
       <Intro message="here you can find the tv shows"/>
-      the length of the series array - {this.state.series.length}
       <series />
     </div>
   );
