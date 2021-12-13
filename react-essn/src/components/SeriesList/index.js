@@ -7,7 +7,8 @@ const SeriesList = (props) =>{
         <div>
             <ul className="series-list">
                 {props.list.map(series => {
-                    <li>{Series.show.name}</li>
+                    <li key={series.show.id}>
+                        {series.show.name}</li>
                 })}
             </ul>
 
