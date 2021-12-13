@@ -12,10 +12,18 @@ class Series extends Component {
      .then(json => this.setState({ series: json }))
    }
 
+   onSeriesInputChange = e => {
+
+   }
+
     render(){
     return (
         <div> 
             the length of the series array - {this.state.series.length}
+            <div>
+              <input type="text" onChange={this.onSeriesInputChange} />
+            </div>
+
             <SeriesList list={this.state.series.length} />
 </div>
     )
