@@ -1,5 +1,6 @@
 import React from "react";
 import Series from "../../containers/Series";
+import './index.css';
 
 const SeriesList = (props) =>{
     retrun (
