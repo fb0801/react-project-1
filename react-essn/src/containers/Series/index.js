@@ -6,13 +6,11 @@ class Series extends Component {
         series:[]
       }
     
-   componentDidMount() {
-     fetch('https://api.tvmaze.com/search/shows?q=the-simpsons')
-     .then((Response)=> Response.json())
-     .then(json => this.setState({ series: json }))
-   }
-
+  
    onSeriesInputChange = e => {
+    fetch('https://api.tvmaze.com/search/shows?q=${e.target.value}')
+    .then((Response)=> Response.json())
+    .then(json => this.setState({ series: json }));
 
    }
 
