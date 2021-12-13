@@ -2,7 +2,7 @@ import React from "react";
 import Series from "../../containers/Series";
 import './index.css';
 
-const SeriesListItem = props => {
+const SeriesListItem = ({ series}) => {
 <li key={series.show.id}>
                         {series.show.name}</li>
 }
