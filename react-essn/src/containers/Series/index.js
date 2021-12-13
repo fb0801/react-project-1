@@ -37,7 +37,12 @@ class Series extends Component {
               &&
               <p>Nothing found</p>
             }
-            <SeriesList list={this.state.series.length} />
+            {
+              isfeteching && <p>Loading...</p> //true statement
+            }
+            {
+              isfeteching && <SeriesList list={this.state.series.length} /> //false statement
+            }
 </div>
     )
 }
