@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import SeriesList from '../../components/SeriesList';
 import Loader from '../../components/Loader';
+import Intro from '../../components/intro';
 
 class Series extends Component {
     state = {
@@ -23,6 +24,8 @@ class Series extends Component {
       const {series,SeriesName,isfeteching} = this.state;
     return (
         <div> 
+                <Intro message="here you can find the tv shows"/>
+
             <div>
               <input value={SeriesName}
               type="text" 
